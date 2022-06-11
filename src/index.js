@@ -22,7 +22,8 @@ const onClickAdd = () => {
   const deleteButton = document.createElement("button");
   deleteButton.innerText = "delete";
   deleteButton.addEventListener("click", () => {
-    alert();
+    const deleteTarget = deleteButton.parentNode;
+    document.getElementById("incomplete-list").removeChild(deleteTarget);
   });
 
   // set div tag of child element li tag.
