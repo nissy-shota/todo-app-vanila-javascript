@@ -7,24 +7,28 @@
 
   <body>
     <div class="input-area">
-      <input placeholder="input your todo" />
-      <button>append</button>
+      <input id="add-text" placeholder="input your todo" />
+      <button id="add-button">append</button>
     </div>
 
-    <div class="incompleted-area">
-      <p>todo</p>
-      <ul>
-        <li>your first todo</li>
-        <button>complete</button>
-        <button>delete</button>
+    <div class="incomplete-area">
+      <p class="title">todo</p>
+      <ul id="incomplete-list">
+        <div class="list-row">
+          <li>your first todo</li>
+          <button>complete</button>
+          <button>delete</button>
+        </div>
       </ul>
     </div>
 
     <div class="completed-area">
-      <p>finished</p>
+      <p class="title">finished</p>
       <ul>
-        <li>your first todo</li>
-        <button>restore</button>
+        <div class="list-row">
+          <li>your first todo</li>
+          <button>restore</button>
+        </div>
       </ul>
     </div>
     <script src="src/index.js"></script>
