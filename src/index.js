@@ -13,14 +13,23 @@ const onClickAdd = () => {
 
   // create complete button tag
   const completeButton = document.createElement("button");
-  completeButton.innerText("complete");
+  completeButton.innerText = "complete";
+  completeButton.addEventListener("click", () => {
+    alert();
+  });
 
   // create delete button tag
   const deleteButton = document.createElement("button");
-  deleteButton.innerText("delete");
+  deleteButton.innerText = "delete";
+  deleteButton.addEventListener("click", () => {
+    alert();
+  });
 
   // set div tag of child element li tag.
   div.appendChild(li);
+  div.appendChild(completeButton);
+  div.appendChild(deleteButton);
+
   document.getElementById("incomplete-list").appendChild(div);
 };
 
