@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>todo-app vanila javascript</title>
+    <meta charset="UTF-8" />
+  </head>
 
-<head>
-	<title>Parcel Sandbox</title>
-	<meta charset="UTF-8" />
-</head>
+  <body>
+    <div class="input-area">
+      <input placeholder="input your todo" />
+      <button>append</button>
+    </div>
 
-<body>
-	<div id="app"></div>
+    <div class="incompleted-area">
+      <p>todo</p>
+      <ul>
+        <li>your first todo</li>
+        <button>complete</button>
+        <button>delete</button>
+      </ul>
+    </div>
 
-	<script src="src/index.js">
-	</script>
-</body>
-
+    <div class="completed-area">
+      <p>finished</p>
+      <ul>
+        <li>your first todo</li>
+        <button>restore</button>
+      </ul>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
 </html>
